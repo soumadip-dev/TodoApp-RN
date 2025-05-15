@@ -5,16 +5,12 @@
 </h1>
 
 <div align="center">
-  <a href="https://github.com/soumadip-dev">
-    <img src="https://skillicons.dev/icons?i=react,css,typescript,github" alt="Tech Stack" width="180" style="padding: 15px 0;">
-  </a>
+  <img src="https://skillicons.dev/icons?i=react,typescript,css,github" alt="Tech Stack" width="170">
 </div>
 
-<h3 align="center">
-  A sleek, intuitive task manager for organizing your daily to-dos with ease. Built with React, TypeScript, and Convex.
-</h3>
-
----
+<p align="center">
+  A sleek, intuitive task manager for organizing your daily to-dos with ease. Built with React Native, Expo, TypeScript, and Convex.
+</p>
 
 <div align="center">
 
@@ -24,7 +20,6 @@
 
 </div>
 
----
 
 ## ✨ Features
 
@@ -36,8 +31,6 @@
 - 📊 **Completion Indicator** – View the percentage of completed tasks in real time.
 - 🌗 **Theme Toggle** – Switch between light and dark modes for better accessibility.
 
----
-
 ## 🛠 Tech Stack & Architecture
 
 - **Frontend**: React Native with Expo – for a fast and responsive mobile experience.
@@ -46,7 +39,6 @@
 - **Styling**: CSS
 - **State Management**: React Context API
 
----
 
 ## 🚀 Quick Start
 
@@ -80,11 +72,9 @@
 
 4. Scan the QR code with the Expo Go app (iOS/Android) or use an emulator.
 
----
 
 ## 📱 Platform Support
 
 - iOS
 - Android
 
----
