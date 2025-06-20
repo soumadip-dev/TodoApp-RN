@@ -3,8 +3,10 @@ import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Text, TextInput, TouchableOpacity, View } from 'react-native';
 
+// Define the Todo type using the document type from Convex
 type Todo = Doc<'todos'>;
 
+// Define the props expected by the TodoItem component
 type Props = {
   item: Todo;
   colors: any;
@@ -19,6 +21,7 @@ type Props = {
   handleDeleteTodo: (id: Id<'todos'>) => void;
 };
 
+// TodoItem component for displaying and interacting with a single todo item
 export default function TodoItem({
   item,
   colors,
@@ -32,16 +35,19 @@ export default function TodoItem({
   handleEditTodo,
   handleDeleteTodo,
 }: Props) {
+  // Determine if the current item is being edited
   const isEditing = editingId === item._id;
 
   return (
     <View style={homeStyles.todoItemWrapper}>
+      {/* Background gradient for the todo item */}
       <LinearGradient
         colors={colors.gradients.surface}
         style={homeStyles.todoItem}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 1 }}
       >
+        {/* Checkbox to toggle the completion status of the todo */}
         <TouchableOpacity
           style={homeStyles.checkbox}
           activeOpacity={0.7}
@@ -59,6 +65,7 @@ export default function TodoItem({
         </TouchableOpacity>
 
         {isEditing ? (
+          // Editable text input for the todo item
           <View style={homeStyles.editContainer}>
             <TextInput
               style={homeStyles.editInput}
@@ -70,6 +77,7 @@ export default function TodoItem({
               placeholderTextColor={colors.textMuted}
             />
             <View style={homeStyles.editButtons}>
+              {/* Button to save the edited todo */}
               <TouchableOpacity onPress={() => handleSaveEdit(item)} activeOpacity={0.8}>
                 <LinearGradient colors={colors.gradients.success} style={homeStyles.editButton}>
                   <Ionicons name="checkmark" size={16} color="#fff" />
@@ -77,6 +85,7 @@ export default function TodoItem({
                 </LinearGradient>
               </TouchableOpacity>
 
+              {/* Button to cancel editing */}
               <TouchableOpacity onPress={handleCancelEdit} activeOpacity={0.8}>
                 <LinearGradient colors={colors.gradients.muted} style={homeStyles.editButton}>
                   <Ionicons name="close" size={16} color="#fff" />
@@ -86,6 +95,7 @@ export default function TodoItem({
             </View>
           </View>
         ) : (
+          // Display the todo text with actions
           <View style={homeStyles.todoTextContainer}>
             <Text
               style={[
@@ -100,6 +110,7 @@ export default function TodoItem({
               {item.text}
             </Text>
 
+            {/* Action buttons for editing and deleting the todo */}
             <View style={homeStyles.todoActions}>
               <TouchableOpacity onPress={() => handleEditTodo(item)} activeOpacity={0.8}>
                 <LinearGradient colors={colors.gradients.warning} style={homeStyles.actionButton}>
