@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import TodoInput from '@/components/TodoInput';
 
 export default function Index() {
   const { toggleDarkMode, colors } = useTheme();
@@ -15,6 +16,7 @@ export default function Index() {
       <StatusBar barStyle={colors.statusBarStyle} />
       <SafeAreaView style={homeStyles.safeArea}>
         <Header />
+        <TodoInput/>
         <Text>Welcome to TODO APP🎉</Text>
         <Text onPress={toggleDarkMode}>Toggle Dark Mode</Text>
       </SafeAreaView>
