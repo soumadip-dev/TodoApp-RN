@@ -32,60 +32,60 @@ export interface ColorScheme {
   statusBarStyle: 'light-content' | 'dark-content';
 }
 
-// Color scheme for light mode
+// Light color scheme
 const lightColors: ColorScheme = {
   bg: '#f5f7fa',
   surface: '#ffffff',
-  text: '#1a202c',
-  textMuted: '#718096',
-  border: '#e2e8f0',
-  primary: '#4f46e5',
+  text: '#1a1a1a',
+  textMuted: '#6b7280',
+  border: '#e5e7eb',
+  primary: '#6366f1',
   success: '#10b981',
   warning: '#f59e0b',
   danger: '#ef4444',
   shadow: 'rgba(0, 0, 0, 0.1)',
   gradients: {
-    background: ['#f5f7fa', '#e2e8f0'],
+    background: ['#f5f7fa', '#e9edf2'],
     surface: ['#ffffff', '#f8fafc'],
-    primary: ['#6366f1', '#4f46e5'],
+    primary: ['#818cf8', '#6366f1'],
     success: ['#34d399', '#10b981'],
     warning: ['#fbbf24', '#f59e0b'],
     danger: ['#f87171', '#ef4444'],
-    muted: ['#cbd5e0', '#a0aec0'],
-    empty: ['#edf2f7', '#e2e8f0'],
+    muted: ['#9ca3af', '#6b7280'],
+    empty: ['#f3f4f6', '#e5e7eb'],
   },
   backgrounds: {
     input: '#ffffff',
-    editInput: '#f8fafc',
+    editInput: '#f9fafb',
   },
   statusBarStyle: 'dark-content' as const,
 };
 
-// Color scheme for dark mode
+// Dark color scheme
 const darkColors: ColorScheme = {
-  bg: '#121826',
+  bg: '#111827',
   surface: '#1f2937',
-  text: '#f3f4f6',
+  text: '#f9fafb',
   textMuted: '#9ca3af',
   border: '#374151',
   primary: '#818cf8',
-  success: '#6ee7b7',
-  warning: '#fcd34d',
-  danger: '#fca5a5',
+  success: '#34d399',
+  warning: '#fbbf24',
+  danger: '#f87171',
   shadow: 'rgba(0, 0, 0, 0.3)',
   gradients: {
-    background: ['#121826', '#1f2937'],
+    background: ['#111827', '#1f2937'],
     surface: ['#1f2937', '#374151'],
-    primary: ['#818cf8', '#6366f1'],
+    primary: ['#a5b4fc', '#818cf8'],
     success: ['#6ee7b7', '#34d399'],
     warning: ['#fcd34d', '#fbbf24'],
     danger: ['#fca5a5', '#f87171'],
-    muted: ['#4b5563', '#6b7280'],
+    muted: ['#4b5563', '#374151'],
     empty: ['#374151', '#4b5563'],
   },
   backgrounds: {
     input: '#1f2937',
-    editInput: '#121826',
+    editInput: '#111827',
   },
   statusBarStyle: 'light-content' as const,
 };
