@@ -17,10 +17,10 @@ An intuitive and efficient mobile application for managing your daily tasks, bui
 ---
 
 <p align="center">
-  <img src="./frontend/src/assets/ScreenShoot.png" alt="Task List Screenshot" width="600">
+  <img src="./assets/images/todo.jpg" alt="Task List Screenshot" width="600">
 </p>
 <p align="center">
-  <img src="./frontend/src/assets/ScreenShoot.png" alt="Settings Screenshot" width="600">
+  <img src="./assets/images/settings.jpg" alt="Settings Screenshot" width="600">
 </p>
 
 ---
